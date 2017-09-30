@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onResponse(Call call, Response response) throws IOException {
-            String msg = "";
+            String msg;
             try {
                 if (200 == response.code()) {
                     msg = response.body().string();
